@@ -137,6 +137,7 @@ header nav a{
 /* Banner */
 .middle-img{
     padding: 3%;
+    width: 100%
 }
 
 /* Second Section */
@@ -197,5 +198,61 @@ footer{
     }
     .threeCol div{
         width: 32%
+    }
+}
+@media (min-width: 801px){
+    header{
+        flex-direction: row;
+        justify-content: center;
+        
+    }
+    header nav{
+        width:80%
+        
+    }
+    header nav a{
+        width: 15%;
+        border-bottom: none;
+        font-size: 150%
+    }
+    .logoDiv{
+        width: 20%;
+        
+    }
+    .logoDiv img{
+        width: 120%
+    }
+    .twoCol div{
+        padding: 3% 0px
+    }
+    
+    .threeCol div{
+        padding: 3% 0px
+    }
+    .contact address{
+        padding: 1% 0px
+    }
+    .contact p{
+        padding: 1% 0px
+    }
+    .contact h4{
+        padding: 1% 0px
+    }
+    .colPic div{ 
+        width: 49%;
+        
+    }
+    .colPic img{
+        width: 80%;
+        display: inline-block
+        
+        
+    }
+    .colPic{
+        display: flex;
+        flex-direction: row
+    }
+    .colPic h1{
+        font-size: 600%
     }
 }
