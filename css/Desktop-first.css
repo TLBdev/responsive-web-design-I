@@ -64,20 +64,19 @@ h1, h2, h3, h4, h5 {
     letter-spacing: 1px;
     margin-bottom: 15px;
 }
-
-/* Navigation Menu */
+/* Nav */
 header{
     display: flex;
-    flex-direction: column-reverse;
+    justify-content: space-around;
     align-items: center;
     margin-top: 2%;
 }
 header nav{
     display: flex;
-    flex-direction: column;
+    
     align-items: center;
     
-    width: 100%;
+    width: 80%;
     
     
 }
@@ -85,34 +84,38 @@ header nav a{
     font-size: 100%;
     text-decoration: none;
     width: 100%;
-    border-bottom: 1px solid black;
+    
     color: gray;
     text-align: center;
     padding: 2%
     
 }
 .logoDiv{
-    width: 100%;
-    border-bottom: 1px solid black;
+    width: 20%;
+    
     
     display: flex;
-    justify-content: center
+    justify-content: center;
 }
+
 /* First Section */
 
+.colPic{
+    display: flex
+}
 .colPic div{
-    width: 100%;
+    width: 48%;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    margin-top: 10%;
-    flex-direction: column;
+    margin-top: 8%;
+    flex-direction: column
     
 
 }
 .colPic h1{
     text-align: center;
-    font-size: 300%
+    font-size: 600%;
 }
 .colPic h2{
     text-align: center;
@@ -120,37 +123,29 @@ header nav a{
     border: 1px solid black;
     width: 40%;
 }
-.colPic img{
-    display: none;
-    
-}
-/* Features and about section */
 .twoCol{
     margin: 3%;
     border-top: 2px solid black;
+    display: flex
 
 }
 .twoCol div{
     padding: 3%
 }
-
 /* Banner */
 .middle-img{
     padding: 3%;
     width: 100%
 }
-
 /* Second Section */
-
 .threeCol{
     margin: 3%;
     border-bottom: 2px solid black;
-
+    display: flex
 }
 .threeCol div{
     padding: 3%
 }
-
 /* Contacts */
 
 .contact{
@@ -172,87 +167,63 @@ footer{
     text-align: center
 }
 
-@media (min-width: 501px){
-    header nav{
-        flex-direction: row;
-        justify-content: space-around;
-        
-    }
-    header nav a{
-        width: 15%;
-        border-bottom: none;
-    }
-    .logoDiv{
-        border-bottom: none;
-    }
-    .twoCol{
-        display: flex;
-        justify-content: space-between;
-    }
-    .twoCol div{
-        width: 48%
-    }
-    .threeCol{
-        display: flex;
-        justify-content: space-between;
-    }
-    .threeCol div{
-        width: 32%
-    }
-}
-@media (min-width: 801px){
+@media (max-width: 500px){
     header{
-        flex-direction: row;
-        justify-content: center;
-        
+        flex-direction: column-reverse;
     }
     header nav{
-        width:80%
-        
-    }
-    header nav a{
-        width: 15%;
-        border-bottom: none;
-        font-size: 150%
+        flex-direction: column;
     }
     .logoDiv{
-        width: 20%;
-        
+        width:100%;
+        border-bottom: 1px solid black
     }
-    .logoDiv img{
-        width: 120%
+    header nav a{
+        border-bottom: 1px solid black;
+        width: 100%
     }
-    .twoCol div{
-        padding: 3% 0px
-    }
-    
-    .threeCol div{
-        padding: 3% 0px
-    }
-    .contact address{
-        padding: 1% 0px
-    }
-    .contact p{
-        padding: 1% 0px
-    }
-    .contact h4{
-        padding: 1% 0px
-    }
-    .colPic div{ 
-        width: 49%;
-        
+    header nav{
+        width: 100%
     }
     .colPic img{
-        width: 80%;
-        display: inline-block
-        
+        display: none;
         
     }
     .colPic{
-        display: flex;
-        flex-direction: row
+        flex-direction: column
     }
-    .colPic h1{
-        font-size: 600%
+    .colPic div{
+        width:100%
+    }
+    .twoCol{
+        flex-direction: column
+    }
+    .threeCol{
+        flex-direction: column
+    }
+
+}
+@media (max-width: 801px){
+    header{
+        flex-direction: column-reverse;
+    }
+    
+    .logoDiv{
+        width:100%;
+        
+    }
+    header nav a{
+        
+        width: 100%
+    }
+    .colPic img{
+        display: none;
+        
+    }
+    .colPic{
+        flex-direction: column
+    }
+    .colPic div{
+        width:100%
     }
 }
